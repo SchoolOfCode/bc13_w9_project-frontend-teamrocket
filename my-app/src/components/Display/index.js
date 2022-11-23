@@ -65,7 +65,6 @@ export default function Display() {
 		let myObj = {};
 		myObj[event.target.name] = event.target.value;
 		setVotes([...votes, myObj]);
-		console.log(votes)
 		const map2 = new Map();
 		votes.map(object => map2.set(Object.keys(object)[0], Object.values(object)[0]))
 		console.log(map2)
